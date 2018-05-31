@@ -1,10 +1,12 @@
 <template>
-  <a class="daily-item">
-    <div class="daily-img" v-if="data.image">
-      <img :src="imgPath + data.images[0]">
-    </div>
-    <div class="daily-title" :class="{noImg: !data.image}">{{type}}{{data.title}}</div>
-  </a>
+  <div>
+    <a class="daily-item">
+      <div class="daily-img" v-if="data.images">
+        <img :src="imgPath + data.images[0]">
+      </div>
+      <div class="daily-title" :class="{noImg: !data.images}">{{data.title}}</div>
+    </a>
+  </div>
 </template>
 
 <script>
@@ -17,8 +19,7 @@ export default {
   },
   data () {
     return {
-      imgPath: $.imgPath,
-      msg:'陈佳锌是傻子'
+      imgPath: $.imgPath
     }
   }
 }

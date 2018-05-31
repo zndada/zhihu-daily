@@ -2,7 +2,7 @@
   "name": "zhihu-daily",
   "version": "1.0.0",
   "description": "知乎日报移动版本",
-  "author": "锌大大 <740395858@qq.com>",
+  "author": "锌大大",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "prettier": "^1.12.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
